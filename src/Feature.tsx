@@ -31,7 +31,7 @@ export function Feature({ room, config }: { room: YRoom | null; config: MeshConf
               key={value}
               type="button"
               aria-pressed={active}
-              aria-label={`${label}, ${count} reactions`}
+              aria-label={`${value} ${count} ${label} reactions`}
               onClick={() => reactions.toggle(value)}
             >
               <span aria-hidden="true">{value}</span>
