@@ -14,7 +14,7 @@
 
 ---
 
-![screenshot](docs/screenshot.png)
+![two peers using the reaction wall](docs/preview.png)
 
 > Two peers, side-by-side, in the same room. Drop a `tests/demo/scenario.mjs`
 > exporting `default async (a, b) => …` and run `npm run demo` to regenerate

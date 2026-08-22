@@ -9,9 +9,9 @@ describe("Feature (component)", () => {
     const room = createMockRoom();
     render(<Feature room={room} config={config} />);
     expect(screen.getByRole("heading", { name: "Mesh Reaction Wall" })).toBeInTheDocument();
-    const applaud = screen.getByRole("button", { name: "Applaud, 0 reactions" });
+    const applaud = screen.getByRole("button", { name: "👏 0 Applaud reactions" });
     fireEvent.click(applaud);
-    expect(screen.getByRole("button", { name: "Applaud, 1 reactions" })).toHaveAttribute(
+    expect(screen.getByRole("button", { name: "👏 1 Applaud reactions" })).toHaveAttribute(
       "aria-pressed",
       "true",
     );
